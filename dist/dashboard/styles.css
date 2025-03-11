@@ -1,0 +1,131 @@
+/* Background Gradient */
+body {
+  background-color: transparent;
+  background: linear-gradient(135deg, #4ade80, #3b82f6);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+/* Glassmorphism Effect */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.glass:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transition: background 0.3s ease;
+}
+
+/* Dropdown Styling */
+.role-dropdown {
+  background: rgba(187, 234, 191, 0.9);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.2);
+  animation: slideDown 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.role-dropdown li:hover {
+  background: rgba(173, 211, 163, 0.7);
+}
+
+/* Google-like Input Fields */
+.input-container {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input-container input:focus {
+  border-color: #4ade80;
+  box-shadow: 0 0 5px rgba(74, 222, 128, 0.5);
+}
+
+.input-container label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #666;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label {
+  top: 0;
+  font-size: 12px;
+  color: #30553e;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0 5px;
+  border-radius: 5px;
+  border-color: green;
+  box-shadow: 0 0 5px rgba(74, 222, 128, 0.5);
+}
+
+/* Placeholder Styling */
+.input-container input::placeholder {
+  color: transparent;
+}
+
+.input-container input:focus::placeholder {
+  color: #ccc;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none; /* Ensure no background */
+  padding: 10px;
+  padding-top: 0;
+}
+.logo {
+  max-width: 100px; /* Adjust the size as needed */
+  height: auto;
+  padding-top: 0;
+  margin-top : 0;
+}

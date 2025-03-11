@@ -3,7 +3,7 @@
 $servername = "localhost";   // Replace with your server name
 $username = "root"; // Replace with your database username
 $password = ""; // Replace with your database password
-$database = "ojttimesheetmonitoringdb"; // Replace with your database name
+$database = "ojttimesheetmonitoringdb2"; // Replace with your database name
 
 // Create a new MySQLi connection
 $conn = new mysqli($servername, $username, $password, $database);

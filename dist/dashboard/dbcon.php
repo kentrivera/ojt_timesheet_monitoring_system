@@ -1,8 +1,8 @@
 <?php
 // Database connection parameters
-$servername = "143.198.204.167/phpmyadmin";   // Replace with your server name
+$servername = "localhost";   // Replace with your server name
 $username = "admin"; // Replace with your database username
-$password = "5616e568a366a29e03222368cb0860a86b5bb928cf4a7624"; // Replace with your database password
+$password = "admin123"; // Replace with your database password
 $database = "ojttimesheetmonitoringdb2"; // Replace with your database name
 
 // Create a new MySQLi connection

@@ -1,6 +1,6 @@
 <?php
 // Database connection parameters
-$servername = "ojttimesheetdb-do-user-19797851-0.j.db.ondigitalocean.com";   // Replace with your server name
+$servername = "25060";   // Replace with your server name
 $username = "doadmin"; // Replace with your database username
 $password = "AVNS_gzkXBSCUDhPADjjZegh"; // Replace with your database password
 $database = "defaultdb"; // Replace with your database name

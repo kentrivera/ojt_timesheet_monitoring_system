@@ -1,19 +1,17 @@
 <?php
-// Database connection parameters
-$servername = "25060";   // Replace with your server name
-$username = "doadmin"; // Replace with your database username
-$password = "AVNS_gzkXBSCUDhPADjjZegh"; // Replace with your database password
-$database = "defaultdb"; // Replace with your database name
+$host = "ojttimesheetdb-do-user-19797851-0.j.db.ondigitalocean.com";
+$port = 25060;
+$username = "doadmin";
+$password = "AVNS_gzkXBSCUDhPADjjZegh";  // Make sure to keep this safe and hidden in production
+$database = "defaultdb";
 
-// Create a new MySQLi connection
-$conn = new mysqli($servername, $username, $password, $database);
+// Create connection
+$conn = new mysqli($host, $username, $password, $database, $port);
 
-// Check the connection
+// Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Optional: Set the character set to UTF-8
-$conn->set_charset("utf8");
-
+echo "Connected successfully!";
 ?>
